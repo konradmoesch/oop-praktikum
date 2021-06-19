@@ -42,7 +42,6 @@ public:
 	 * @todo debugOutput entfernen!
 	 */
 	vector<unsigned int> encode(const string& inputstr);
-	void debugOutput();
 };
 
 #endif /* CARRAYENC_HPP_ */

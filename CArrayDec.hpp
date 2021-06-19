@@ -42,7 +42,6 @@ public:
 	 * @todo debugOutput entfernen!
 	 */
 	string decode(const vector<unsigned int>& encoded);
-	void debugOutput(string);
 };
 
 #endif /* CARRAYDEC_HPP_ */
