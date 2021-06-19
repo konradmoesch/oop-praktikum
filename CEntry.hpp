@@ -42,7 +42,7 @@ public:
 	 * Funktion setSymbol(string) zur Änderung der gespeicherten Zeichenkette.
 	 * @param symbol	zu speichernde Zeichenkette
 	 */
-	void setSymbol(string symbol);
+	void setSymbol(const string symbol);
 	/*!
 	 * Funktion getNumber() zur Abfrage der Anzahl der CEntry-Instanzen.
 	 * @return Anzahl der CEntry-Objekte

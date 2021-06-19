@@ -29,7 +29,7 @@ public:
 	 * Konstruktor zur Erzeugung des Exception-Objektes
 	 * @param msg	enthält die Beschreibung der Exception
 	 */
-	XOutOfBounds(const char *msg);
+	explicit XOutOfBounds(const char *msg);
 	/*!
 	 * Destruktor; wirft keine weiteren Exceptions
 	 */
