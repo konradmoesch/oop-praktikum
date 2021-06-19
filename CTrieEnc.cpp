@@ -8,7 +8,7 @@ CTrieEnc::CTrieEnc(){
 	}
 }
 
-bool getValuesEqual(CKnot table[], int pos, int parent, string val){
+bool getValuesEqual(CKnot table[], int pos, int parent, const string& val){
 	return (table[pos].getParent()==parent && table[pos].getSymbol()==val);
 }
 
@@ -21,7 +21,6 @@ vector<unsigned int> CTrieEnc::encode(const string& inputstr){
 	string extstr = "";
 	//Elternposition: I, Numer. ASCII Wert f akt Zeichen: J
 	int I = 0;
-	int J = 0;
 	//Hashing-Singleton
 	CDoubleHashing& hasher = CDoubleHashing::getInstance();
 	//Versuchs-Zähler für Rehashing
@@ -33,12 +32,12 @@ vector<unsigned int> CTrieEnc::encode(const string& inputstr){
 	std::string::const_iterator initialiter = inputstr.begin();
 	I=charToInt(*initialiter);
 	//encoded.push_back(charToInt(*initialiter));
-	initialiter++;
+	++initialiter;
 
 	//durch alle Zeichen iterieren
-	for (std::string::const_iterator iter=initialiter; iter != inputstr.end(); iter++){
+	for (std::string::const_iterator iter=initialiter; iter != inputstr.end(); ++iter){
 		//Neues Zeichen in J eingelesen
-		J = charToInt(*iter);
+		int J = charToInt(*iter);
 
 		//Rehashing soll bei Versuch 0 beginnen
 		attemptCounter.setValue(0);
