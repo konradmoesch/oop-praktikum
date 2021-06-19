@@ -1,0 +1,2 @@
+# oop-praktikum
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4721dc7a3b1947939c11d81ad2959c72)](https://app.codacy.com/gh/konradmoesch/oop-praktikum?utm_source=github.com&utm_medium=referral&utm_content=konradmoesch/oop-praktikum&utm_campaign=Badge_Grade_Settings)
