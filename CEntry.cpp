@@ -14,7 +14,7 @@ const string& CEntry::getSymbol() const {
 }
 
 //Setter für m_symbol
-void CEntry::setSymbol(const string symbol){
+void CEntry::setSymbol(const string& symbol){
 	m_symbol = symbol;
 }
 

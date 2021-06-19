@@ -13,10 +13,6 @@
 #include "CForwardCounter.hpp"
 #include "CDoubleHashing.hpp"
 
-//! \todo weg damit? nur debug?
-#include <sstream>
-#include <iterator>
-
 /*!
  * \class CTrieEnc
  * \brief Klasse für den Encoder mit Trie (Aufgabe 2)
@@ -33,13 +29,11 @@ public:
 	 * parameterloser Konstruktor
 	 */
 	CTrieEnc();
-	void debugTrieOutput();
 	/*!
 	 * encodiert den String mit Hilfe des LZW-Algorithmus
 	 * es wird dabei ein Trie als Dictionary benutzt
 	 * @param inputstr	zu codierender String
 	 * @return encodeter Vektor
-	 * @todo debugTrieOutput entfernen!
 	 */
 	vector<unsigned int> encode(const string& inputstr);
 };

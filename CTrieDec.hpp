@@ -13,10 +13,6 @@
 #include "CForwardCounter.hpp"
 #include "CDoubleHashing.hpp"
 
-//! \todo weg mit dem? nur Debug?
-#include <sstream>
-#include <iterator>
-
 /*!
  * \class CTrieDec
  * \brief Klasse für den Decoder mit Trie (Aufgabe 2)
@@ -38,10 +34,8 @@ public:
 	 * es wird dabei ein Trie als Dictionary benutzt
 	 * @param encoded	Vektor der zu decodierenden Indexwerte
 	 * @return decodierter String
-	 * @todo debugOutput entfernen!
 	 */
 	string decode(const vector<unsigned int>& encoded);
-	void debugOutput(string);
 };
 
 #endif /* CTRIEDEC_HPP_ */
