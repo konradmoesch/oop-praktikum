@@ -16,10 +16,7 @@ vector<unsigned int> CTrieEnc::encode(const string& inputstr){
 	//Wenn Eingabe leer, beenden
 	if (inputstr=="") return {};
 
-	//Variablen initialisieren
-	string curstr = "";
-	string extstr = "";
-	//Elternposition: I, Numer. ASCII Wert f akt Zeichen: J
+	//Elternposition: I, Numer. ASCII Wert für akt Zeichen: J
 	int I = 0;
 	//Hashing-Singleton
 	CDoubleHashing& hasher = CDoubleHashing::getInstance();

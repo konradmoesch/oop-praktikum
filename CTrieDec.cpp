@@ -21,7 +21,6 @@ string CTrieDec::decode(const vector<unsigned int>& encoded){
 		return "";
 	}
 	string decoded = "";
-	string curDecoded = "";
 
 	int lastHashValue=0;
 
@@ -33,7 +32,7 @@ string CTrieDec::decode(const vector<unsigned int>& encoded){
 	//durch eingabevektor iterieren
 	for (unsigned int curIndex=0; curIndex<encoded.size(); curIndex++){
 		//aktuelles Zeichen decodieren
-		curDecoded = m_symbolTable[encoded[curIndex]].getSymbol();
+		string curDecoded = m_symbolTable[encoded[curIndex]].getSymbol();
 
 		//wenn parent(s) vorhanden, diese zu curDecoded hinzufügen (zsmbasteln)
 		if (m_symbolTable[encoded[curIndex]].getParent()!=-2) {

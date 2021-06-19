@@ -1,7 +1,7 @@
 /*!\mainpage Programmierpraktikum von Konrad Mösch
  * In diesem Praktikum wird der LZW-Algorithmus mit einem Array und einem Trie implementiert
  * \author Konrad Janis Mösch (493608)
- * \date 04.06.2021
+ * \date 19.06.2021
  * \version noch nicht fertig
  * \todo alle Dateien kommentieren
  * \todo Membervariablen fehlen?
@@ -59,7 +59,6 @@ public:
 	 */
 	CArray(const CArray& a){
 		size = a.size;
-		entries = new T[size];
 		entries = a.entries;
 	}
 	/*!
