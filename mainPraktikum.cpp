@@ -6,7 +6,7 @@
 // Bitte hier eintragen, welcher Teil bearbeitet wird,
 //   TEIL_1 = Array-Implementierung (CArray)
 //   TEIL_2 = Trie-Implementierung (CTrie)
-#define TEIL_2
+#define TEIL_1
 
 // Benötigte Bibliotheken einbinden
 #include <iostream>

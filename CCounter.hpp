@@ -1,29 +1,29 @@
 /*!\file CCounter.hpp
- * \brief Das Headerfile für die Klasse CCounter (aus Aufgabe 5).
+ * \brief Das Headerfile fuer die Klasse CCounter (aus Aufgabe 5).
  *
- * Langbeschreibung des Files in (CCounter.hpp),muss über Leerzeile von der Kurzbeschreibung abgetrennt werden
+ * Langbeschreibung des Files in (CCounter.hpp),muss ueber Leerzeile von der Kurzbeschreibung abgetrennt werden
  */
 #ifndef CCOUNTER_HPP_
 #define CCOUNTER_HPP_
 
 /*!
  * \class CCounter
- * \brief Klasse CCounter (aus Aufgabe 5) als Basisklasse eines Zählers
+ * \brief Klasse CCounter (aus Aufgabe 5) als Basisklasse eines Zaehlers
  *
  * CCounter() ist der parameterlose Konstruktor
  * virtual ~CCounter() ist der Destruktor
- * virtual void count() inkrementiert den Zähler
- * int getValue() const gibt den aktuellen Zählerstand zurück
- * void setValue(int val) setzt den Zähler auf den gegebenen Wert
- * bool operator<(const CCounter& c2) const vergleicht, ob der aufrufende Zähler kleiner ist als der Zähler hinter dem Operator
- * bool operator>(const CCounter& c2) const vergleicht, ob der aufrufende Zähler größer ist als der Zähler hinter dem Operator
+ * virtual void count() inkrementiert den Zaehler
+ * int getValue() const gibt den aktuellen Zaehlerstand zurueck
+ * void setValue(int val) setzt den Zaehler auf den gegebenen Wert
+ * bool operator<(const CCounter& c2) const vergleicht, ob der aufrufende Zaehler kleiner ist als der Zaehler hinter dem Operator
+ * bool operator>(const CCounter& c2) const vergleicht, ob der aufrufende Zaehler groeßer ist als der Zaehler hinter dem Operator
  *
- * int m_value ist die private Membervariable für den aktuellen Zählerstand.
+ * int m_value ist die private Membervariable fuer den aktuellen Zaehlerstand.
  */
 class CCounter {
 
 private:
-	int m_value; //!< Private Membervariable für den aktuellen Zählerstand.
+	int m_value; //!< Private Membervariable fuer den aktuellen Zaehlerstand.
 public:
 	/*!
 	 * parameterloser Konstruktor
@@ -34,32 +34,31 @@ public:
 	 */
 	virtual ~CCounter();
 	/*!
-	 * virtuelle Basisfunktion zum Inkrementieren des Zählers (Funktionalität wird mittels Overload in einer ?? Klasse bereitgestellt)
-	 * \todo Begriffe (Basisklasse u Vererbung) nutzen!
+	 * virtuelle Basisfunktion zum Inkrementieren des Zaehlers (Funktionalitaet wird mittels Overload in einer ?? Klasse bereitgestellt)
 	 */
 	virtual void count();
 	/*!
-	 * Funktion zum Abfragen des aktuellen Zählerstandes.
-	 * @return der aktuelle Zählerstand wird als integer-Wert zurückgegeben
+	 * Funktion zum Abfragen des aktuellen Zaehlerstandes.
+	 * @return der aktuelle Zaehlerstand wird als integer-Wert zurueckgegeben
 	 */
 	int getValue() const;
 	/*!
-	 * Funktion zum Setzen des Zählerstandes.
-	 * @param val	der Zählerstand wird auf diesen Wert gesetzt
+	 * Funktion zum Setzen des Zaehlerstandes.
+	 * @param val	der Zaehlerstand wird auf diesen Wert gesetzt
 	 */
 	void setValue(int val);
 	/*!
-	 * Operator< zum Vergleichen der Zählerstände zweier Zähler.
-	 * Wenn der Zählerstand des aufrufenden Zählerobjektes (Zähler vor dem Operator) kleiner ist als der des zu vergleichenden Zählers, wird true zurückgegeben. Sonst wird false zurückgegeben.
-	 * @param c2	zu vergleichendes Zählerobjekt (steht direkt hinter dem Operator).
-	 * @return  true, wenn der Zähler vor dem Operator einen kleineren Zählerstand als der Zähler hinter dem Operator hat.
+	 * Operator< zum Vergleichen der Zaehlerstaende zweier Zaehler.
+	 * Wenn der Zaehlerstand des aufrufenden Zaehlerobjektes (Zaehler vor dem Operator) kleiner ist als der des zu vergleichenden Zaehlers, wird true zurueckgegeben. Sonst wird false zurueckgegeben.
+	 * @param c2	zu vergleichendes Zaehlerobjekt (steht direkt hinter dem Operator).
+	 * @return  true, wenn der Zaehler vor dem Operator einen kleineren Zaehlerstand als der Zaehler hinter dem Operator hat.
 	 */
 	bool operator<(const CCounter &c2) const;
 	/*!
-	 * Operator> zum Vergleichen der Zählerstände zweier Zähler.
-	 * Wenn der Zählerstand des aufrufenden Zählerobjektes (Zähler vor dem Operator) größer ist als der des zu vergleichenden Zählers, wird true zurückgegeben. Sonst wird false zurückgegeben.
-	 * @param c2	zu vergleichendes Zählerobjekt (steht direkt hinter dem Operator).
-	 * @return  true, wenn der Zähler vor dem Operator einen größeren Zählerstand als der Zähler hinter dem Operator hat.
+	 * Operator> zum Vergleichen der Zaehlerstaende zweier Zaehler.
+	 * Wenn der Zaehlerstand des aufrufenden Zaehlerobjektes (Zaehler vor dem Operator) groeßer ist als der des zu vergleichenden Zaehlers, wird true zurueckgegeben. Sonst wird false zurueckgegeben.
+	 * @param c2	zu vergleichendes Zaehlerobjekt (steht direkt hinter dem Operator).
+	 * @return  true, wenn der Zaehler vor dem Operator einen groeßeren Zaehlerstand als der Zaehler hinter dem Operator hat.
 	 */
 	bool operator>(const CCounter &c2) const;
 

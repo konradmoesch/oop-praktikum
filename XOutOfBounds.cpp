@@ -1,6 +1,6 @@
 #include "XOutOfBounds.hpp"
 
-//Konstruktor für Exception; initialisiert Fehlermeldung (m_msg)
+//Konstruktor fuer Exception; initialisiert Fehlermeldung (m_msg)
 XOutOfBounds::XOutOfBounds(const char* msg): m_msg(msg){}
 
 //Destruktor; darf keine weiteren Exceptions werfen

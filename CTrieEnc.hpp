@@ -1,9 +1,8 @@
 /*!
  * \file CTrieEnc.hpp
- * \brief Klasse CTrieEnc für Encodierung mittels Trie (Aufgabenteil 2)
+ * \brief Klasse CTrieEnc fuer Encodierung mittels Trie (Aufgabenteil 2)
  *
- * Dieses File enthält die Klasse CTrieEnc, welche zur Encodierung mit Hilfe eines Tries in Aufgabe 2 benutzt wird.
- * \todo cpp aufräumen; Ausgabe entfernen
+ * Dieses File enthaelt die Klasse CTrieEnc, welche zur Encodierung mit Hilfe eines Tries in Aufgabe 2 benutzt wird.
  */
 #ifndef CTRIEENC_HPP_
 #define CTRIEENC_HPP_
@@ -15,14 +14,14 @@
 
 /*!
  * \class CTrieEnc
- * \brief Klasse für den Encoder mit Trie (Aufgabe 2)
+ * \brief Klasse fuer den Encoder mit Trie (Aufgabe 2)
  *
- * Klasse für den Encoder mittels Trie.
+ * Klasse fuer den Encoder mittels Trie.
  * CTrieEnc erbt von CEnc.
  */
 class CTrieEnc: public CEnc {
 private:
-	CKnot m_symbolTable[LZW_DICT_SIZE]; //!< Private Membervariable für das Dictionary.
+	CKnot m_symbolTable[LZW_DICT_SIZE]; //!< Private Membervariable fuer das Dictionary.
 
 public:
 	/*!

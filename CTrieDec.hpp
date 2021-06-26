@@ -1,9 +1,8 @@
 /*!
  * \file CTrieDec.hpp
- * \brief Klasse CTrieDec für Decodierung mittels Trie (Aufgabenteil 2)
+ * \brief Klasse CTrieDec fuer Decodierung mittels Trie (Aufgabenteil 2)
  *
- * Dieses File enthält die Klasse CTrieDec, welche zur Decodierung mit Hilfe eines Tries in Aufgabe 2 benutzt wird.
- * \todo cpp aufräumen; Ausgabe entfernen
+ * Dieses File enthaelt die Klasse CTrieDec, welche zur Decodierung mit Hilfe eines Tries in Aufgabe 2 benutzt wird.
  */
 #ifndef CTRIEDEC_HPP_
 #define CTRIEDEC_HPP_
@@ -15,14 +14,14 @@
 
 /*!
  * \class CTrieDec
- * \brief Klasse für den Decoder mit Trie (Aufgabe 2)
+ * \brief Klasse fuer den Decoder mit Trie (Aufgabe 2)
  *
- * Klasse für den Decoder mittels Trie.
+ * Klasse fuer den Decoder mittels Trie.
  * CTrieDec erbt von CDec.
  */
 class CTrieDec: public CDec {
 private:
-	CKnot m_symbolTable[LZW_DICT_SIZE]; //!< Private Membervariable für das Dictionary.
+	CKnot m_symbolTable[LZW_DICT_SIZE]; //!< Private Membervariable fuer das Dictionary.
 
 public:
 	/*!

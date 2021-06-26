@@ -1,8 +1,7 @@
 /*!\file CDoubleHashing.hpp
- * \brief Das Headerfile für die Singleton-Klasse CDoubleHashing (aus Aufgabe 7).
+ * \brief Das Headerfile fuer die Singleton-Klasse CDoubleHashing (aus Aufgabe 7).
  *
- * Diese Klasse ist fürs Hashing zuständig. Sie ist als Singleton ausgelegt (es darf nur eine Instanz existieren)
- * \todo Alle Beschreibungen lesen und umformulieren!
+ * Diese Klasse ist fuers Hashing zustaendig. Sie ist als Singleton ausgelegt (es darf nur eine Instanz existieren)
  */
 
 #ifndef CDOUBLEHASHING_HPP_
@@ -10,9 +9,9 @@
 
 /*!
  * \class CDoubleHashing
- * \brief Klasse CDoubleHashing (aus Aufgabe 7) zur Implementierung der Double-Hashing-Funktionalität
+ * \brief Klasse CDoubleHashing (aus Aufgabe 7) zur Implementierung der Double-Hashing-Funktionalitaet
  *
- * static CDoubleHashing& getInstance() ist eine statische Memberfunktion, die die Instanz des Singletons zurückgibt
+ * static CDoubleHashing& getInstance() ist eine statische Memberfunktion, die die Instanz des Singletons zurueckgibt
  * unsigned int hash(unsigned int I, unsigned int J, unsigned int dict_size, unsigned int attempt) ist die Hash-Funktion
  *
  * static CDoubleHashing m_instance ist die private Membervariable um die Singleton-Instanz zu speichern
@@ -20,7 +19,7 @@
  */
 class CDoubleHashing {
 private:
-	static CDoubleHashing m_instance; //!< Private Membervariable für die Singleton-Instanz.
+	static CDoubleHashing m_instance; //!< Private Membervariable fuer die Singleton-Instanz.
 	/*!
 	 * parameterloser Konstruktor (bei Singleton verboten)
 	 */
@@ -35,7 +34,7 @@ private:
 	CDoubleHashing operator=(CDoubleHashing &other) = delete;
 public:
 	/*!
-	 * getInstance() gibt die Singleton-Instanz zurück
+	 * getInstance() gibt die Singleton-Instanz zurueck
 	 * @return Singleton-Instanz
 	 */
 	static CDoubleHashing& getInstance();
@@ -43,8 +42,8 @@ public:
 	 * Hashfunktion
 	 * @param I	erste zu hashende Zahl
 	 * @param J	zweite zu hashende Zahl
-	 * @param dict_size	Größe der Hashtabelle
-	 * @param attempt	Zähler (für doppeltes Hashing)
+	 * @param dict_size	Groeße der Hashtabelle
+	 * @param attempt	Zaehler (fuer doppeltes Hashing)
 	 * @return Hashwert
 	 */
 	unsigned int hash(unsigned int I, unsigned int J, unsigned int dict_size,

@@ -1,5 +1,5 @@
 /*!\file CForwardCounter.hpp
- * \brief Das Headerfile für die Klasse CForwardCounter (aus Aufgabe 5).
+ * \brief Das Headerfile fuer die Klasse CForwardCounter (aus Aufgabe 5).
  *
  * Diese Klasse ist von CCounter abgeleitet
  */
@@ -10,15 +10,15 @@
 
 /*!
  * \class CForwardCounter
- * \brief Von CCounter abgeleitete Klasse CForwardCounter (aus Aufgabe 5) zur Implementierung des Zählers aus CCounter als einfach vorwärts inkrementierender Zähler
+ * \brief Von CCounter abgeleitete Klasse CForwardCounter (aus Aufgabe 5) zur Implementierung des Zaehlers aus CCounter als einfach vorwaerts inkrementierender Zaehler
  *
- * void count() überlädt die Funktion der Basisklasse CCounter. Dabei wird der Zählerstand um 1 inkrementiert.
+ * void count() ueberlaedt die Funktion der Basisklasse CCounter. Dabei wird der Zaehlerstand um 1 inkrementiert.
  */
 class CForwardCounter: public CCounter {
 public:
 	/*!
-	 * überladene Funktion count() aus CCounter.
-	 * Inkrementiert den Zählerstand (um 1).
+	 * Ueberladene Funktion count() aus CCounter.
+	 * Inkrementiert den Zaehlerstand (um 1).
 	 */
 	void count();
 };

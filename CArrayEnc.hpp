@@ -1,9 +1,8 @@
 /*!
  * \file CArrayEnc.hpp
- * \brief Klasse CArrayEnc für Encodierung mittels CArray (Aufgabenteil 1)
+ * \brief Klasse CArrayEnc fuer Encodierung mittels CArray (Aufgabenteil 1)
  *
- * Dieses File enthält die Klasse CArrayEnc, welche zur Encodierung mit Hilfe der Liste (CArray) in Aufgabe 1 benutzt wird.
- * \todo cpp aufräumen
+ * Dieses File enthaelt die Klasse CArrayEnc, welche zur Encodierung mit Hilfe der Liste (CArray) in Aufgabe 1 benutzt wird.
  */
 #ifndef CARRAYENC_HPP_
 #define CARRAYENC_HPP_
@@ -14,14 +13,14 @@
 
 /*!
  * \class CArrayEnc
- * \brief Klasse für den Encoder mit CArray (Aufgabe 1)
+ * \brief Klasse fuer den Encoder mit CArray (Aufgabe 1)
  *
- * Klasse für den Encoder mittels Liste.
+ * Klasse fuer den Encoder mittels Liste.
  * CArrayEnc erbt von CEnc.
  */
 class CArrayEnc: public CEnc {
 private:
-	CArray<CEntry, LZW_DICT_SIZE> m_symbolTable; //!< Private Membervariable für das Dictionary.
+	CArray<CEntry, LZW_DICT_SIZE> m_symbolTable; //!< Private Membervariable fuer das Dictionary.
 
 public:
 	/*!
@@ -39,7 +38,6 @@ public:
 	 * es wird dabei eine Liste (CArray) als Dictionary benutzt
 	 * @param inputstr	zu codierender String
 	 * @return encodeter Vektor
-	 * @todo debugOutput entfernen!
 	 */
 	vector<unsigned int> encode(const string& inputstr);
 };
